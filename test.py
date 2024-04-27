@@ -1,8 +1,14 @@
-# Python code equivalent to the provided logic
+import pandas as pd
 
-# Input
-a = int(input("Enter a number: "))
+# Load the whole dataset
+whole_dataset = pd.read_csv('heart.csv')  # Change the file path accordingly
 
-# Conditional logic
-if a < 0:
-    print(a + 10)
+# Drop the specified columns
+columns_to_drop = ['HeartDisease', 'RestingBP', 'RestingECG']
+whole_dataset = whole_dataset.drop(columns=columns_to_drop)
+
+# Save the modified dataset as 'heartdisease.csv'
+whole_dataset.to_csv('heartdisease.csv', index=False)
+
+print("Dataset after dropping columns:")
+print(whole_dataset)
