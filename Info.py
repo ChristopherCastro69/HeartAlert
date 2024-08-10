@@ -20,7 +20,7 @@ def display_info_popover():
 
         - **Age** : age of the patient [years]
         - **Sex** : sex of the patient [M: Male, F: Female]
-        - **ChestPainType** : chest pain type [TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic]
+        - **ChestPainType** : chest pain type [ ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic]
         - **Cholesterol** : serum cholesterol [mm/dl]
         - **FastingBS** : fasting blood sugar [1: if FastingBS > 120 mg/dl, 0: otherwise]
         - **MaxHR** : maximum heart rate achieved [Numeric value between 60 and 202]
