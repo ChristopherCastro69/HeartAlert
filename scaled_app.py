@@ -35,6 +35,9 @@ def save_and_refresh(user_input):
     st.session_state.user_input = user_input
     st.experimental_rerun()
 
+    # Log the user input before rerunning
+    print("User input before rerun:", st.session_state.user_input)
+
 # Function to preprocess user input
 def preprocess_input(user_input):
     # Convert categorical variables to numeric representations
