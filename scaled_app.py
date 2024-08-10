@@ -35,7 +35,8 @@ def save_and_refresh(user_input):
     st.session_state.user_input = user_input
     st.rerun()
 
-
+    # Log the user input before rerunning
+    print("User input before rerun:", st.session_state.user_input)
 
 # Function to preprocess user input
 def preprocess_input(user_input):
@@ -161,4 +162,4 @@ if st.button('Predict'):
 
 # Reset button
 if st.button('Reset'):
-    st.experimental_rerun()
+    st.rerun()
